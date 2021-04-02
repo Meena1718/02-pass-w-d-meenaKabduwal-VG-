@@ -2,6 +2,9 @@ package se.nackademin.examination.examination_jacoco;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import org.junit.Test;
 
 public class GameTest {
@@ -120,5 +123,13 @@ public class GameTest {
 		int i = game.calculateOutPutBasedOnHomeCity("k");
 		assertEquals("The result should be 10", i, 10);
    }
+	@Test
+	public void testMethod20() {
+		Game game = new Game ();
+		ArrayList<String> values = new ArrayList<String>();
+		values.addAll(Arrays.asList("Game", "Rafael", "Silva", "M", "30", "Fortaleza"));
+		game.run(values);
+		assertEquals("Age is 30",game.getAgeFromInputValues(values),30);
+		}
 	
 }
