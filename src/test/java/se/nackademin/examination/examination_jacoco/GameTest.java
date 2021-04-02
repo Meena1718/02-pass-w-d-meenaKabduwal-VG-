@@ -120,10 +120,5 @@ public class GameTest {
 		int i = game.calculateOutPutBasedOnHomeCity("k");
 		assertEquals("The result should be 10", i, 10);
    }
-	@Test
-	public void getGenderFromInputValues() {
-		ResultFromInputs resultFromInputs = new ResultFromInputs();
-		char genderCharacter = resultFromInputs.setResultForGender(get);	
-	}
 	
 }

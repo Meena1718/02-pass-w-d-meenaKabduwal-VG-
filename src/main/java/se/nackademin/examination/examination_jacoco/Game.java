@@ -18,7 +18,7 @@ public class Game {
 	
 	
 	
-/**	public ArrayList<String> collectInputData(){
+	/**public ArrayList<String> collectInputData(){
 		ArrayList<String> resultArray = new ArrayList<String>();
 		Scanner scanner = new Scanner(System.in);
 		String inputValue = "";
